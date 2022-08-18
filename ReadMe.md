@@ -3,7 +3,7 @@
 <div style="display:flex;">
   <div width="50%">
     <p> 🤠 I'm from Muriaé - Minas Gerais :brazil: </p>
-    <p> 💻 Actually I work with Back-End, using Delphi (Object Pascal and PostgreSQL) </p>
+    <p> 💻 Currently I work with Back-End, using Delphi (Object Pascal and PostgreSQL) </p>
     <p> 🌱 I'm studying JavaScript, TypeScript, React and React Native </p>
   </div>
   <div width="50%" align="left">
