@@ -4,7 +4,7 @@
   <div width="50%">
     <p> 🤠 I'm from Muriaé - Minas Gerais :brazil: </p>
     <p> 💻 Currently I work with Back-End, using Delphi (Object Pascal and PostgreSQL) </p>
-    <p> 🌱 I'm studying JavaScript, TypeScript, React and React Native </p>
+    <p> 🌱 I'm studying JavaScript, TypeScript, React. </p>
   </div>
   <div width="50%" align="left">
    <img style="width: 50%;;" src="https://steamuserimages-a.akamaihd.net/ugc/1763692605134511781/03C633CDCEB7C1EA4B998D8560B1DE2D2AA0A3F7/?imw=5000&amp;imh=5000&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false">
