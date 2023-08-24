@@ -5,9 +5,10 @@
     <p> 🤠 I'm from Muriaé - Minas Gerais :brazil: </p>
     <p> 💻 Currently I work with Back-End, using Delphi (Object Pascal and PostgreSQL) </p>
     <p> 🌱 I'm studying Web and Mobile Development. </p>
+    <p><i>So, what do you say? Why not help one another on this lonely journey?</i> ☀</p>
   </div>
-  <div width="50%" align="left">
-   <img style="width: 50%;;" src="https://steamuserimages-a.akamaihd.net/ugc/1763692605134511781/03C633CDCEB7C1EA4B998D8560B1DE2D2AA0A3F7/?imw=5000&amp;imh=5000&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=false">
+  <div>
+   <img style="width: 70%;" src="https://steamuserimages-a.akamaihd.net/ugc/1763692605134550571/9CFF83AC64D215F2BABA04A27DAFD0FA4A0B532C/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false">
   </div>
 </div>
 
