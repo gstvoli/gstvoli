@@ -4,7 +4,7 @@
   <div width="50%">
     <p> 🤠 I'm from Muriaé - Minas Gerais :brazil: </p>
     <p> 💻 Currently I work with Back-End, using Delphi (Object Pascal and PostgreSQL) </p>
-    <p> 🌱 I'm studying Web and Mobile Development. </p>
+    <p> 🌱 I'm studying Web and Mobile Development, with ReactJS. </p>
     <p><i>So, what do you say? Why not help one another on this lonely journey?</i> ☀</p>
   </div>
   <div>
