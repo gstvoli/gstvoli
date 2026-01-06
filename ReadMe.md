@@ -2,7 +2,7 @@
 
 <div style="display:flex;">
   <div width="50%">
-    <p> I try to do something that I like or when the mood strikes</p>
+    <p> I try to do something that I like, or when the mood strikes</p>
     <p><i>So, what do you say? Why not help one another on this lonely journey?</i> ☀</p>
   </div>
   <div>
