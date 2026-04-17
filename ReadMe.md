@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="profile.svg" alt="Gustavo.EXE — NetNavi Profile" width="780"/>
+  <img src="console.svg" alt="Gustavo.EXE — NetNavi Profile" width="780"/>
 </div>
 
 <br/>
