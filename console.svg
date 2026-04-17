@@ -34,8 +34,8 @@
       @keyframes bar-ts   { from{width:0} to{width:78px} }
       @keyframes bar-pas  { from{width:0} to{width:72px} }
       @keyframes bar-html { from{width:0} to{width:30px} }
-      @keyframes bar-cs   { from{width:0} to{width:29px} }
-      @keyframes bar-css  { from{width:0} to{width:48px} }
+      @keyframes bar-cs   { from{width:0} to{width:27px} }
+      @keyframes bar-css  { from{width:0} to{width:26px} }
 
       /* Accent line sweep */
       .sweep { animation: sweep 3s ease-in-out infinite; }
@@ -171,7 +171,7 @@
     <rect x="510" y="257" width="0" height="6" rx="2" fill="#a78bfa" class="bar-cs"/>
     <text x="720" y="264" fill="#5a8aaa" font-size="10">8.26%</text>
 
-    <!-- CSS/Java -->
+    <!-- CSS -->
     <text x="410" y="286" fill="#c8e6f5" font-size="11">CSS</text>
     <rect x="510" y="279" width="200" height="6" rx="2" fill="#0d1e33"/>
     <rect x="510" y="279" width="0" height="6" rx="2" fill="#4fc3f7" class="bar-css"/>
