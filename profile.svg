@@ -1,0 +1,250 @@
+<svg width="780" height="520" viewBox="0 0 780 520" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+
+      .mono { font-family: 'Share Tech Mono', 'Courier New', monospace; }
+
+      /* Blink animation */
+      .blink { animation: blink 1s step-end infinite; }
+      @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+      /* Scan line fade-in */
+      .fadein-1 { animation: fadein 0.4s ease forwards; animation-delay: 0.1s; opacity: 0; }
+      .fadein-2 { animation: fadein 0.4s ease forwards; animation-delay: 0.5s; opacity: 0; }
+      .fadein-3 { animation: fadein 0.4s ease forwards; animation-delay: 0.9s; opacity: 0; }
+      .fadein-4 { animation: fadein 0.4s ease forwards; animation-delay: 1.3s; opacity: 0; }
+      .fadein-5 { animation: fadein 0.4s ease forwards; animation-delay: 1.7s; opacity: 0; }
+      .fadein-6 { animation: fadein 0.4s ease forwards; animation-delay: 2.1s; opacity: 0; }
+      .fadein-7 { animation: fadein 0.4s ease forwards; animation-delay: 2.5s; opacity: 0; }
+      .fadein-8 { animation: fadein 0.4s ease forwards; animation-delay: 2.9s; opacity: 0; }
+      @keyframes fadein { to { opacity: 1; } }
+
+      /* Bar grow */
+      .bar-js  { animation: bar-js  1s ease forwards; animation-delay: 1.8s; }
+      .bar-ts  { animation: bar-ts  1s ease forwards; animation-delay: 2.0s; }
+      .bar-pas { animation: bar-pas 1s ease forwards; animation-delay: 2.2s; }
+      .bar-html{ animation: bar-html 1s ease forwards; animation-delay: 2.4s; }
+      .bar-cs  { animation: bar-cs  1s ease forwards; animation-delay: 2.6s; }
+      .bar-css { animation: bar-css 1s ease forwards; animation-delay: 2.8s; }
+      @keyframes bar-js   { from{width:0} to{width:116px} }
+      @keyframes bar-ts   { from{width:0} to{width:78px} }
+      @keyframes bar-pas  { from{width:0} to{width:72px} }
+      @keyframes bar-html { from{width:0} to{width:30px} }
+      @keyframes bar-cs   { from{width:0} to{width:29px} }
+      @keyframes bar-css  { from{width:0} to{width:48px} }
+
+      /* Accent line sweep */
+      .sweep { animation: sweep 3s ease-in-out infinite; }
+      @keyframes sweep {
+        0%   { x: -780px; opacity: 0.6; }
+        50%  { opacity: 0.9; }
+        100% { x: 780px; opacity: 0; }
+      }
+
+      /* Online dot pulse */
+      .pulse { animation: pulse 2s ease-in-out infinite; }
+      @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+    </style>
+
+    <!-- Scanline pattern -->
+    <pattern id="scanlines" x="0" y="0" width="2" height="4" patternUnits="userSpaceOnUse">
+      <rect width="2" height="1" fill="#00e5ff" opacity="0.03"/>
+    </pattern>
+
+    <!-- Clip for bar fills -->
+    <clipPath id="clip-js">  <rect x="0" y="0" width="116" height="6" rx="2"/> </clipPath>
+    <clipPath id="clip-ts">  <rect x="0" y="0" width="78"  height="6" rx="2"/> </clipPath>
+    <clipPath id="clip-pas"> <rect x="0" y="0" width="72"  height="6" rx="2"/> </clipPath>
+    <clipPath id="clip-html"><rect x="0" y="0" width="30"  height="6" rx="2"/> </clipPath>
+    <clipPath id="clip-cs">  <rect x="0" y="0" width="29"  height="6" rx="2"/> </clipPath>
+    <clipPath id="clip-css"> <rect x="0" y="0" width="48"  height="6" rx="2"/> </clipPath>
+  </defs>
+
+  <!-- ── BACKGROUND ── -->
+  <rect width="780" height="520" fill="#0a0e1a" rx="6"/>
+  <rect width="780" height="520" fill="url(#scanlines)" rx="6"/>
+
+  <!-- top accent line -->
+  <rect x="0" y="0" width="780" height="3" fill="#00e5ff" rx="2" opacity="0.7"/>
+  <!-- sweep shimmer -->
+  <rect class="sweep" y="0" width="60" height="3" fill="white" opacity="0.6" rx="2"/>
+
+  <!-- ══════════════════════════════════
+       BANNER SECTION
+  ══════════════════════════════════ -->
+  <rect x="16" y="16" width="748" height="100" rx="4" fill="#0d1b2e" stroke="#1a3a5c" stroke-width="1"/>
+
+  <!-- ONLINE pill -->
+  <rect x="638" y="27" width="110" height="22" rx="3" fill="#0a1a2e" stroke="#1a3a5c" stroke-width="1"/>
+  <circle cx="653" cy="38" r="4" fill="#06d6a0" class="pulse"/>
+  <text x="662" y="42" class="mono" fill="#06d6a0" font-size="10" letter-spacing="1">ONLINE</text>
+
+  <text x="30" y="40" class="mono" fill="#5a8aaa" font-size="10" letter-spacing="2">// NetNavi Profile — ACDC Area</text>
+  <text x="30" y="72" class="mono" fill="#00e5ff" font-size="28" letter-spacing="1" font-weight="bold">Gustavo<tspan fill="#ffd60a">.EXE</tspan></text>
+  <text x="30" y="95" class="mono" fill="#5a8aaa" font-size="11" font-style="italic">I try to do something that I like, or when the mood strikes</text>
+  <text x="30" y="110" class="mono" fill="#8ab4cc" font-size="11" font-style="italic">So, what do you say? Why not help one another on this lonely journey? ☀</text>
+
+
+  <!-- ══════════════════════════════════
+       LEFT COLUMN — NAVI STATUS
+  ══════════════════════════════════ -->
+  <rect x="16" y="130" width="368" height="185" rx="4" fill="#0b1624" stroke="#1a3a5c" stroke-width="1"/>
+  <!-- panel header -->
+  <rect x="16" y="130" width="368" height="28" rx="4" fill="#0d1e33"/>
+  <rect x="16" y="144" width="368" height="14" fill="#0d1e33"/>
+  <circle cx="31" cy="144" r="4" fill="#00e5ff"/>
+  <text x="42" y="149" class="mono" fill="#5a8aaa" font-size="9" letter-spacing="2">NAVI STATUS</text>
+
+  <!-- rows -->
+  <g class="mono" font-size="11">
+    <!-- row 1 -->
+    <rect x="16" y="158" width="368" height="1" fill="#0f2035"/>
+    <text x="30" y="174" fill="#5a8aaa" class="fadein-1">OPERATOR</text>
+    <text x="200" y="174" fill="#00e5ff" class="fadein-1">gstvoli</text>
+    <!-- row 2 -->
+    <rect x="16" y="180" width="368" height="1" fill="#0f2035"/>
+    <text x="30" y="196" fill="#5a8aaa" class="fadein-2">AREA</text>
+    <text x="200" y="196" fill="#00e5ff" class="fadein-2">ACDC / BR-03</text>
+    <!-- row 3 -->
+    <rect x="16" y="202" width="368" height="1" fill="#0f2035"/>
+    <text x="30" y="218" fill="#5a8aaa" class="fadein-3">COMMITS</text>
+    <text x="200" y="218" fill="#ffd60a" class="fadein-3">307</text>
+    <!-- row 4 -->
+    <rect x="16" y="224" width="368" height="1" fill="#0f2035"/>
+    <text x="30" y="240" fill="#5a8aaa" class="fadein-4">STARS</text>
+    <text x="200" y="240" fill="#ffd60a" class="fadein-4">★  1</text>
+    <!-- row 5 -->
+    <rect x="16" y="246" width="368" height="1" fill="#0f2035"/>
+    <text x="30" y="262" fill="#5a8aaa" class="fadein-5">BUSTERS</text>
+    <text x="200" y="262" fill="#06d6a0" class="fadein-5">CHARGED</text>
+    <!-- row 6 -->
+    <rect x="16" y="268" width="368" height="1" fill="#0f2035"/>
+    <text x="30" y="285" fill="#5a8aaa" class="fadein-6">STYLE</text>
+    <text x="200" y="285" fill="#00e5ff" class="fadein-6">Custom / JS</text>
+  </g>
+
+
+  <!-- ══════════════════════════════════
+       RIGHT COLUMN — LANGUAGES FOLDER
+  ══════════════════════════════════ -->
+  <rect x="396" y="130" width="368" height="185" rx="4" fill="#0b1624" stroke="#1a3a5c" stroke-width="1"/>
+  <rect x="396" y="130" width="368" height="28" rx="4" fill="#0d1e33"/>
+  <rect x="396" y="144" width="368" height="14" fill="#0d1e33"/>
+  <circle cx="411" cy="144" r="4" fill="#00e5ff"/>
+  <text x="422" y="149" class="mono" fill="#5a8aaa" font-size="9" letter-spacing="2">FOLDER — LANGUAGES</text>
+
+  <!-- Language bars -->
+  <g class="mono fadein-3">
+    <!-- JS -->
+    <text x="410" y="176" fill="#c8e6f5" font-size="11">JavaScript</text>
+    <rect x="510" y="169" width="200" height="6" rx="2" fill="#0d1e33"/>
+    <rect x="510" y="169" width="0" height="6" rx="2" fill="#ffd60a" class="bar-js"/>
+    <text x="636" y="176" fill="#5a8aaa" font-size="10">31%</text>
+
+    <!-- TS -->
+    <text x="410" y="198" fill="#c8e6f5" font-size="11">TypeScript</text>
+    <rect x="510" y="191" width="200" height="6" rx="2" fill="#0d1e33"/>
+    <rect x="510" y="191" width="0" height="6" rx="2" fill="#5ac8fa" class="bar-ts"/>
+    <text x="636" y="198" fill="#5a8aaa" font-size="10">21%</text>
+
+    <!-- Pascal -->
+    <text x="410" y="220" fill="#c8e6f5" font-size="11">Pascal</text>
+    <rect x="510" y="213" width="200" height="6" rx="2" fill="#0d1e33"/>
+    <rect x="510" y="213" width="0" height="6" rx="2" fill="#06d6a0" class="bar-pas"/>
+    <text x="636" y="220" fill="#5a8aaa" font-size="10">19%</text>
+
+    <!-- HTML -->
+    <text x="410" y="242" fill="#c8e6f5" font-size="11">HTML</text>
+    <rect x="510" y="235" width="200" height="6" rx="2" fill="#0d1e33"/>
+    <rect x="510" y="235" width="0" height="6" rx="2" fill="#ff8c42" class="bar-html"/>
+    <text x="636" y="242" fill="#5a8aaa" font-size="10">8%</text>
+
+    <!-- C# -->
+    <text x="410" y="264" fill="#c8e6f5" font-size="11">C#</text>
+    <rect x="510" y="257" width="200" height="6" rx="2" fill="#0d1e33"/>
+    <rect x="510" y="257" width="0" height="6" rx="2" fill="#a78bfa" class="bar-cs"/>
+    <text x="636" y="264" fill="#5a8aaa" font-size="10">8%</text>
+
+    <!-- CSS/Java -->
+    <text x="410" y="286" fill="#c8e6f5" font-size="11">CSS / Java</text>
+    <rect x="510" y="279" width="200" height="6" rx="2" fill="#0d1e33"/>
+    <rect x="510" y="279" width="0" height="6" rx="2" fill="#4fc3f7" class="bar-css"/>
+    <text x="636" y="286" fill="#5a8aaa" font-size="10">13%</text>
+  </g>
+
+
+  <!-- ══════════════════════════════════
+       BATTLE CHIP FOLDER
+  ══════════════════════════════════ -->
+  <rect x="16" y="328" width="748" height="96" rx="4" fill="#0b1624" stroke="#1a3a5c" stroke-width="1"/>
+  <rect x="16" y="328" width="748" height="28" rx="4" fill="#0d1e33"/>
+  <rect x="16" y="342" width="748" height="14" fill="#0d1e33"/>
+  <circle cx="31" cy="342" r="4" fill="#00e5ff"/>
+  <text x="42" y="347" class="mono" fill="#5a8aaa" font-size="9" letter-spacing="2">BATTLE CHIP FOLDER — TECH STACK</text>
+
+  <!-- Chips row 1 -->
+  <g class="mono fadein-5">
+    <!-- HTML5 -->
+    <rect x="28" y="364" width="64" height="20" rx="3" fill="#1e0e06" stroke="#7a3c15" stroke-width="1"/>
+    <text x="36" y="378" fill="#ff8c42" font-size="9" letter-spacing="1">HTML5</text>
+
+    <!-- CSS3 -->
+    <rect x="100" y="364" width="52" height="20" rx="3" fill="#06141e" stroke="#1a4a6a" stroke-width="1"/>
+    <text x="108" y="378" fill="#4fc3f7" font-size="9" letter-spacing="1">CSS3</text>
+
+    <!-- JavaScript -->
+    <rect x="160" y="364" width="86" height="20" rx="3" fill="#1a1200" stroke="#6a5000" stroke-width="1"/>
+    <text x="168" y="378" fill="#ffd60a" font-size="9" letter-spacing="1">JAVASCRIPT</text>
+
+    <!-- TypeScript -->
+    <rect x="254" y="364" width="86" height="20" rx="3" fill="#061018" stroke="#1a4060" stroke-width="1"/>
+    <text x="262" y="378" fill="#5ac8fa" font-size="9" letter-spacing="1">TYPESCRIPT</text>
+
+    <!-- React -->
+    <rect x="348" y="364" width="56" height="20" rx="3" fill="#001a20" stroke="#006070" stroke-width="1"/>
+    <text x="356" y="378" fill="#00e5ff" font-size="9" letter-spacing="1">REACT</text>
+
+    <!-- Node.js -->
+    <rect x="412" y="364" width="64" height="20" rx="3" fill="#051510" stroke="#054030" stroke-width="1"/>
+    <text x="420" y="378" fill="#06d6a0" font-size="9" letter-spacing="1">NODE.JS</text>
+
+    <!-- PostgreSQL -->
+    <rect x="484" y="364" width="88" height="20" rx="3" fill="#080e18" stroke="#2a3e5a" stroke-width="1"/>
+    <text x="492" y="378" fill="#8fafd4" font-size="9" letter-spacing="1">POSTGRESQL</text>
+
+    <!-- Delphi -->
+    <rect x="580" y="364" width="56" height="20" rx="3" fill="#180606" stroke="#5a1a1a" stroke-width="1"/>
+    <text x="588" y="378" fill="#e06060" font-size="9" letter-spacing="1">DELPHI</text>
+  </g>
+
+  <!-- Chips row 2 placeholder spacer already handled by height -->
+
+
+  <!-- ══════════════════════════════════
+       TERMINAL FOOTER
+  ══════════════════════════════════ -->
+  <rect x="16" y="436" width="748" height="70" rx="4" fill="#060d16" stroke="#1a3a5c" stroke-width="1"/>
+
+  <g class="mono" font-size="11">
+    <text x="30" y="458" class="fadein-6">
+      <tspan fill="#06d6a0">MEGAMAN.EXE &gt;</tspan>
+      <tspan fill="#c8e6f5"> jack_in --user gstvoli --area github</tspan>
+    </text>
+    <text x="30" y="474" class="fadein-7">
+      <tspan fill="#5a8aaa" dx="12">Connection established.</tspan>
+      <tspan fill="#00e5ff"> ACDC Area</tspan>
+      <tspan fill="#5a8aaa"> loaded.</tspan>
+    </text>
+    <text x="30" y="490" class="fadein-8">
+      <tspan fill="#5a8aaa" dx="12">Be kind. Jack out safely.</tspan>
+      <!-- blinking cursor block -->
+      <tspan> </tspan>
+    </text>
+    <!-- cursor as rect for reliable animation -->
+    <rect x="258" y="478" width="7" height="13" fill="#00e5ff" class="blink fadein-8"/>
+  </g>
+
+  <!-- bottom border accent -->
+  <rect x="0" y="517" width="780" height="3" fill="#1a3a5c" rx="2"/>
+</svg>
