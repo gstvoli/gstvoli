@@ -1,4 +1,4 @@
-<svg width="780" height="520" viewBox="0 0 780 520" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="780" height="565" viewBox="0 0 780 565" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
@@ -8,6 +8,9 @@
       /* Blink animation */
       .blink { animation: blink 1s step-end infinite; }
       @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+      .blink-f { animation: blink 0.8s step-end infinite; }
+      @keyframes blink-f { 0%,100%{opacity:1} 50%{opacity:0} }	
 
       /* Scan line fade-in */
       .fadein-1 { animation: fadein 0.4s ease forwards; animation-delay: 0.1s; opacity: 0; }
@@ -62,8 +65,8 @@
   </defs>
 
   <!-- ── BACKGROUND ── -->
-  <rect width="780" height="520" fill="#0a0e1a" rx="6"/>
-  <rect width="780" height="520" fill="url(#scanlines)" rx="6"/>
+  <rect width="780" height="565" fill="#0a0e1a" rx="6"/>
+  <rect width="780" height="50" fill="url(#scanlines)" rx="6"/>
 
   <!-- top accent line -->
   <rect x="0" y="0" width="780" height="3" fill="#00e5ff" rx="2" opacity="0.7"/>
@@ -73,10 +76,10 @@
   <!-- ══════════════════════════════════
        BANNER SECTION
   ══════════════════════════════════ -->
-  <rect x="16" y="16" width="748" height="100" rx="4" fill="#0d1b2e" stroke="#1a3a5c" stroke-width="1"/>
+  <rect x="16" y="16" width="748" height="103" rx="4" fill="#0d1b2e" stroke="#1a3a5c" stroke-width="1"/>
 
   <!-- ONLINE pill -->
-  <rect x="638" y="27" width="110" height="22" rx="3" fill="#0a1a2e" stroke="#1a3a5c" stroke-width="1"/>
+  <rect x="638" y="27" width="110" height="21" rx="3" fill="#0a1a2e" stroke="#1a3a5c" stroke-width="1"/>
   <circle cx="653" cy="38" r="4" fill="#06d6a0" class="pulse"/>
   <text x="662" y="42" class="mono" fill="#06d6a0" font-size="10" letter-spacing="1">ONLINE</text>
 
@@ -93,7 +96,7 @@
   <!-- panel header -->
   <rect x="16" y="130" width="368" height="28" rx="4" fill="#0d1e33"/>
   <rect x="16" y="144" width="368" height="14" fill="#0d1e33"/>
-  <circle cx="31" cy="144" r="4" fill="#00e5ff"/>
+  <circle class="pulse" cx="31" cy="144" r="4" fill="#00e5ff"/>
   <text x="42" y="149" class="mono" fill="#5a8aaa" font-size="9" letter-spacing="2">NAVI STATUS</text>
 
   <!-- rows -->
@@ -109,15 +112,17 @@
     <!-- row 3 -->
     <rect x="16" y="202" width="368" height="1" fill="#0f2035"/>
     <text x="30" y="218" fill="#5a8aaa" class="fadein-3">COMMITS</text>
-    <text x="200" y="218" fill="#ffd60a" class="fadein-3">307</text>
+    <text x="200" y="218" fill="#ffd60a" class="fadein-3">251</text>
     <!-- row 4 -->
     <rect x="16" y="224" width="368" height="1" fill="#0f2035"/>
     <text x="30" y="240" fill="#5a8aaa" class="fadein-4">STARS</text>
-    <text x="200" y="240" fill="#ffd60a" class="fadein-4">★  1</text>
+    <text x="200" y="240" fill="#ffd60a" class="fadein-4">★ 1</text>
     <!-- row 5 -->
     <rect x="16" y="246" width="368" height="1" fill="#0f2035"/>
     <text x="30" y="262" fill="#5a8aaa" class="fadein-5">BUSTERS</text>
-    <text x="200" y="262" fill="#06d6a0" class="fadein-5">CHARGED</text>
+    <text x="200" y="262" fill="#06d6a0" class="fadein-5 blink-f">
+	<tspan class="blink-f">CHARGED</tspan>
+    </text>
     <!-- row 6 -->
     <rect x="16" y="268" width="368" height="1" fill="#0f2035"/>
     <text x="30" y="285" fill="#5a8aaa" class="fadein-6">STYLE</text>
@@ -131,7 +136,7 @@
   <rect x="396" y="130" width="368" height="185" rx="4" fill="#0b1624" stroke="#1a3a5c" stroke-width="1"/>
   <rect x="396" y="130" width="368" height="28" rx="4" fill="#0d1e33"/>
   <rect x="396" y="144" width="368" height="14" fill="#0d1e33"/>
-  <circle cx="411" cy="144" r="4" fill="#00e5ff"/>
+  <circle class="pulse" cx="411" cy="144" r="4" fill="#00e5ff"/>
   <text x="422" y="149" class="mono" fill="#5a8aaa" font-size="9" letter-spacing="2">FOLDER — LANGUAGES</text>
 
   <!-- Language bars -->
@@ -140,37 +145,37 @@
     <text x="410" y="176" fill="#c8e6f5" font-size="11">JavaScript</text>
     <rect x="510" y="169" width="200" height="6" rx="2" fill="#0d1e33"/>
     <rect x="510" y="169" width="0" height="6" rx="2" fill="#ffd60a" class="bar-js"/>
-    <text x="636" y="176" fill="#5a8aaa" font-size="10">31%</text>
+    <text x="720" y="176" fill="#5a8aaa" font-size="10">32.87%</text>
 
     <!-- TS -->
     <text x="410" y="198" fill="#c8e6f5" font-size="11">TypeScript</text>
     <rect x="510" y="191" width="200" height="6" rx="2" fill="#0d1e33"/>
     <rect x="510" y="191" width="0" height="6" rx="2" fill="#5ac8fa" class="bar-ts"/>
-    <text x="636" y="198" fill="#5a8aaa" font-size="10">21%</text>
+    <text x="720" y="198" fill="#5a8aaa" font-size="10">21%</text>
 
     <!-- Pascal -->
     <text x="410" y="220" fill="#c8e6f5" font-size="11">Pascal</text>
     <rect x="510" y="213" width="200" height="6" rx="2" fill="#0d1e33"/>
     <rect x="510" y="213" width="0" height="6" rx="2" fill="#06d6a0" class="bar-pas"/>
-    <text x="636" y="220" fill="#5a8aaa" font-size="10">19%</text>
+    <text x="720" y="220" fill="#5a8aaa" font-size="10">20.36%</text>
 
     <!-- HTML -->
     <text x="410" y="242" fill="#c8e6f5" font-size="11">HTML</text>
     <rect x="510" y="235" width="200" height="6" rx="2" fill="#0d1e33"/>
     <rect x="510" y="235" width="0" height="6" rx="2" fill="#ff8c42" class="bar-html"/>
-    <text x="636" y="242" fill="#5a8aaa" font-size="10">8%</text>
+    <text x="720" y="242" fill="#5a8aaa" font-size="10">8.76%</text>
 
     <!-- C# -->
     <text x="410" y="264" fill="#c8e6f5" font-size="11">C#</text>
     <rect x="510" y="257" width="200" height="6" rx="2" fill="#0d1e33"/>
     <rect x="510" y="257" width="0" height="6" rx="2" fill="#a78bfa" class="bar-cs"/>
-    <text x="636" y="264" fill="#5a8aaa" font-size="10">8%</text>
+    <text x="720" y="264" fill="#5a8aaa" font-size="10">8.26%</text>
 
     <!-- CSS/Java -->
-    <text x="410" y="286" fill="#c8e6f5" font-size="11">CSS / Java</text>
+    <text x="410" y="286" fill="#c8e6f5" font-size="11">CSS</text>
     <rect x="510" y="279" width="200" height="6" rx="2" fill="#0d1e33"/>
     <rect x="510" y="279" width="0" height="6" rx="2" fill="#4fc3f7" class="bar-css"/>
-    <text x="636" y="286" fill="#5a8aaa" font-size="10">13%</text>
+    <text x="720" y="286" fill="#5a8aaa" font-size="10">7.84%</text>
   </g>
 
 
@@ -180,7 +185,7 @@
   <rect x="16" y="328" width="748" height="96" rx="4" fill="#0b1624" stroke="#1a3a5c" stroke-width="1"/>
   <rect x="16" y="328" width="748" height="28" rx="4" fill="#0d1e33"/>
   <rect x="16" y="342" width="748" height="14" fill="#0d1e33"/>
-  <circle cx="31" cy="342" r="4" fill="#00e5ff"/>
+  <circle class="pulse" cx="31" cy="342" r="4" fill="#00e5ff"/>
   <text x="42" y="347" class="mono" fill="#5a8aaa" font-size="9" letter-spacing="2">BATTLE CHIP FOLDER — TECH STACK</text>
 
   <!-- Chips row 1 -->
@@ -224,27 +229,38 @@
   <!-- ══════════════════════════════════
        TERMINAL FOOTER
   ══════════════════════════════════ -->
-  <rect x="16" y="436" width="748" height="70" rx="4" fill="#060d16" stroke="#1a3a5c" stroke-width="1"/>
+  <rect x="16" y="436" width="748" height="112" rx="4" fill="#060d16" stroke="#1a3a5c" stroke-width="1"/>
 
   <g class="mono" font-size="11">
     <text x="30" y="458" class="fadein-6">
       <tspan fill="#06d6a0">MEGAMAN.EXE &gt;</tspan>
       <tspan fill="#c8e6f5"> jack_in --user gstvoli --area github</tspan>
     </text>
-    <text x="30" y="474" class="fadein-7">
+    <text x="30" y="475" class="fadein-7">
       <tspan fill="#5a8aaa" dx="12">Connection established.</tspan>
+    </text>
+    <text x="42" y="490" class="fadein-7">
       <tspan fill="#00e5ff"> ACDC Area</tspan>
       <tspan fill="#5a8aaa"> loaded.</tspan>
     </text>
-    <text x="30" y="490" class="fadein-8">
-      <tspan fill="#5a8aaa" dx="12">Be kind. Jack out safely.</tspan>
+    <text x="30" y="505" class="fadein-8">
+      <tspan fill="#5a8aaa" dx="12">Scanning area.</tspan>
+    </text>
+    <text x="30" y="520" class="fadein-8">
+      <tspan fill="#5a8aaa" dx="12">Safe Jack out ready.</tspan>
       <!-- blinking cursor block -->
-      <tspan> </tspan>
+      <tspan class="blink"> </tspan>
+    </text>
+    <text x="30" y="535" class="fadein-8">
+      <tspan class="blink" fill="#06d6a0">&gt;</tspan>
+    </text>
+    <text x="30" y="535" class="fadein-8">
+      <tspan fill="#c8e6f5" dx="12">jack_out megaman.exe --safe </tspan>
     </text>
     <!-- cursor as rect for reliable animation -->
-    <rect x="258" y="478" width="7" height="13" fill="#00e5ff" class="blink fadein-8"/>
+    <rect x="225" y="525" width="7" height="13" fill="#00e5ff" class="blink"/>
   </g>
 
   <!-- bottom border accent -->
-  <rect x="0" y="517" width="780" height="3" fill="#1a3a5c" rx="2"/>
+  <rect x="0" y="560" width="780" height="3" fill="#1a3a5c" rx="2"/>
 </svg>
